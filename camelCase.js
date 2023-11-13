@@ -14,8 +14,6 @@ Examples
 */
 
 
-
-
 function toCamelCase(str){
     str = str.split('');
       return str.map(function(word, i){
@@ -29,3 +27,23 @@ function toCamelCase(str){
     
     
     toCamelCase("the-stealth-warrior")
+
+    // Other solution
+    function toCamelCase2(str){
+        str = str.match(/\w+/g)
+        let camelCase = str.reduce((acc,word, i) => {
+            if(i == 0) return acc+=word
+            return acc+=upperFirstLetter(word)
+        })
+        console.log(camelCase);
+        }
+        function upperFirstLetter(word) {
+            firstLetter = word[0]
+            firstLetter = firstLetter.toUpperCase()
+            restLetters = word.slice(1)
+            return firstLetter + restLetters
+        
+        }
+        
+        toCamelCase2('qualquer-coisa-legal')
+        
