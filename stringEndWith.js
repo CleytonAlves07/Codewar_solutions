@@ -15,4 +15,9 @@ function solution(str, ending){
     return str.slice(-(ending.length)) === ending;
   }
 
-  
+
+//   other solution
+
+function solution2(str, ending){
+    return str.endWith(ending);
+}
