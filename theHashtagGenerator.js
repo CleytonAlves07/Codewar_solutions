@@ -1,9 +1,9 @@
 function generateHashtag(str) {
     arrayStrings = str.match(/\S+/g);
-    let stringLessSpaces = [] 
-    arrayStrings?.map((word) => stringLessSpaces += upperFirstLetter(word))
+    let stringHashtag = '' 
+    arrayStrings?.map((word) => stringHashtag += upperFirstLetter(word))
     if(checkString(arrayStrings)) {
-        return `#${stringLessSpaces}`;
+        return `#${stringHashtag}`;
     }
     return false;
 }
@@ -23,4 +23,4 @@ function checkString(arrayStrings) {
     return true;
 }
 
-
+generateHashtag('Codewars is nice')
