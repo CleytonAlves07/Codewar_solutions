@@ -15,7 +15,7 @@ function reverseWords(str) {
     for(i in arrayReverse) {
         arrayReverse[i] = arrayReverse[i].split('').reverse().join('')
     }
-    return console.log(arrayReverse.join(' '));
+    return arrayReverse.join(' ');
 }
 
 reverseWords('The quick brown fox jumps over the lazy dog.')
