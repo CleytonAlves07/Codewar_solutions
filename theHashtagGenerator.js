@@ -1,5 +1,5 @@
 function generateHashtag(str) {
-    arrayStrings = str.match(/\S+/g);
+    arrayStrings = str.match(/prime+/gi);
     let stringHashtag = '' 
     arrayStrings?.map((word) => stringHashtag += upperFirstLetter(word))
     if(checkString(arrayStrings)) {
