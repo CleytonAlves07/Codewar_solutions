@@ -25,9 +25,3 @@ function splitAndMultiNumber(num) {
 
 
 persistence(39)
-
-// let result = splitAndMultiNumber(num)
-//     result.toString().split('').length !== 1
-//     ? splitAndMultiNumber(result)
-//       : result
-//   return result
