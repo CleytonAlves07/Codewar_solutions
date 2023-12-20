@@ -29,7 +29,7 @@ function cpfValidate(cpf) {
     digit2 = 11 - (acc2 % 11)
     digit2 = digit2.toString()
    
-
+    if (digit2 > 9) return digit2 = 0;
     finalDigit = digit1 + digit2
     return console.log(finalDigit === comparisonDigit);
 
